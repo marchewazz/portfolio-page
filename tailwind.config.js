@@ -11,8 +11,8 @@ export default {
     },
     extend: {
       colors: {
-        'main-blue': '#2A1A5E',
-        'light-blue': '#1D24CA',
+        'main-blue': '#130837',
+        'light-blue': '#000358',
         'dark-blue': '#070F2B',
         'gold': '#FAB95B',
       },
