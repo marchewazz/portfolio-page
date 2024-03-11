@@ -2,9 +2,7 @@ import { faBriefcase, faCode, faGraduationCap, faMoon, faUser } from "@fortaweso
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
 
-export default function NavigationButtons(props: {
-    darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>;
-  }) {
+export default function NavigationButtons(props: {darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>}) {
 
     function changeLanguage(language: string): void {
         localStorage.setItem("language", language)
