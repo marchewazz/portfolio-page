@@ -2,7 +2,7 @@ import { faBriefcase, faCode, faGraduationCap, faMoon, faUser } from "@fortaweso
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
 
-export default function NavigationButtons(props: {darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>}) {
+export default function NavigationButtons(props: { darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>, innerRef: React.MutableRefObject<null> }) {
 
     function changeLanguage(language: string): void {
         localStorage.setItem("language", language)
@@ -10,7 +10,7 @@ export default function NavigationButtons(props: {darkModeChangeFunction: React.
     }
 
     return (
-        <div className="absolute text-white flex flex-col right-0 top-1/2 bg-dark-blue z-50">
+        <div ref={props.innerRef} className="absolute text-white flex flex-col right-0 top-1/2 bg-dark-blue z-50">
             <button>
                 <FontAwesomeIcon icon={faUser} />
             </button>
