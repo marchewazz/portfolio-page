@@ -10,7 +10,7 @@ export default function NavigationButtons(props: { darkModeChangeFunction: React
     }
 
     return (
-        <div ref={props.innerRef} className="absolute text-white flex flex-col right-0 top-1/2 bg-dark-blue z-50">
+        <div ref={props.innerRef} className="absolute text-white flex sm:flex-col bottom-0 right-1/2 sm:right-0 sm:top-1/2 sm:bottom-auto bg-dark-blue z-50">
             <button>
                 <FontAwesomeIcon icon={faUser} />
             </button>
