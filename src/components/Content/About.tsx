@@ -45,24 +45,13 @@ export default function About() {
                 <h4 className="dark:text-gold text-3xl font-bold text-center">
                     { strings.about.header }
                 </h4>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph1 }
-                </p>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph2 }
-                </p>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph3 }
-                </p>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph4 }
-                </p>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph5 }
-                </p>
-                <p className="dark:text-gold">
-                    { strings.about.paragraph6 }
-                </p>
+                { strings.about.paragraphs.map((paragraph) => {
+                    return (
+                        <p className="dark:text-gold">
+                            { paragraph }
+                        </p>
+                    )
+                })}
             </div>
             <div>
                 <h4 className="dark:text-gold text-3xl font-bold text-center">
