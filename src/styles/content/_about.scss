@@ -1,0 +1,13 @@
+@layer components {
+    .about-link {
+      @apply border p-2 rounded transition-all duration-300 ease-in-out min-w-12 max-w-12 flex items-center justify-center aspect-square overflow-hidden
+      dark:border-gold
+      hover:max-w-80 hover:aspect-auto hover:dark:bg-gold hover:dark:text-dark-blue
+    }
+
+    .resume-link {
+        @apply border p-2 rounded flex items-center gap-2 transition-all duration-300 ease-in-out
+        dark:border-gold
+        hover:dark:bg-gold hover:dark:text-dark-blue
+    }
+}

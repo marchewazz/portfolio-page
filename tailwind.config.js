@@ -17,6 +17,9 @@ export default {
         'light-text': '#BDBDBF',
         'gold': '#FAB95B',
       },
+      transitionProperty: {
+        multiple: "width , height , backgroundColor , border-radius"
+      }
     },
   },
   plugins: [],
