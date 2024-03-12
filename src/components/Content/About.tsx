@@ -6,6 +6,9 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import strings from "../../utilities/strings";
 
 import resume from "../../assets/random.pdf"
+import FrontSwiper from "./Skills/FrontSwiper";
+import OtherSwiper from "./Skills/OtherSwiper";
+import JSSwiper from "./Skills/JSSwiper";
 
 export default function About() {
     return (
@@ -66,12 +69,9 @@ export default function About() {
                 <h4 className="dark:text-gold text-3xl font-bold text-center">
                     { strings.about.skills }
                 </h4>
-                <div className="flex justify-evenly">
-                    <img className="rounded" src="https://picsum.photos/50" alt="" />
-                    <img className="rounded" src="https://picsum.photos/50" alt="" />
-                    <img className="rounded" src="https://picsum.photos/50" alt="" />
-                    <img className="rounded" src="https://picsum.photos/50" alt="" />
-                </div>
+                <FrontSwiper />
+                <JSSwiper />
+                <OtherSwiper />
             </div>
         </section>
     )
