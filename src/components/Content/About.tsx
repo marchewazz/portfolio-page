@@ -26,18 +26,18 @@ export default function About() {
             </div>
             <div>
                 <div className="flex justify-around text-gold">
-                    <a className="about-link group" href="mailto:marchewczykmateusz24@gmail.com">
+                    <a className="about-link group hover:w-80" href="mailto:marchewczykmateusz24@gmail.com">
                         <FontAwesomeIcon icon={faEnvelope} className="group-hover:hidden" size="lg" />
                         <span className="hidden group-hover:block">marchewczykmateusz24@gmail.com</span>
                     </a>
-                    <a className="about-link group" href="tel:+48730396760">
+                    <a className="about-link group hover:w-40" href="tel:+48730396760">
                         <FontAwesomeIcon icon={faPhone} className="group-hover:hidden" size="lg" />
                         <span className="hidden group-hover:block text-nowrap">+48 730 396 760</span>
                     </a>
                     <a className="about-link group" href="https://www.linkedin.com/in/mateusz-marchewczyk-b2b7881ba/" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} size="lg" />
                     </a>
-                    <a className="about-link group" href="https://github.com/marchewazz" target="_blank">
+                    <a className="about-link group hover:w-32" href="https://github.com/marchewazz" target="_blank">
                         <FontAwesomeIcon icon={faGithub} className="group-hover:hidden" size="lg" />
                         <span className="hidden group-hover:block text-nowrap">marchewazz</span>
                     </a>
