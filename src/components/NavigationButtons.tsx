@@ -10,29 +10,31 @@ export default function NavigationButtons(props: { darkModeChangeFunction: React
     }
 
     return (
-        <div ref={props.innerRef} className="absolute text-white flex flex-col right-0 top-1/2 bg-dark-blue z-50">
-            <button>
+        <div ref={props.innerRef} className="absolute text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:left-auto sm:right-0 sm:top-1/2 sm:bottom-auto bg-dark-blue z-50 
+        border-r border-l border-t md:border-b md:border-r-0 border-white
+        rounded-t-3xl sm:rounded-tr-none md:rounded-l-3xl">
+            <button className="navigation-button active rounded-tl-3xl">
                 <FontAwesomeIcon icon={faUser} />
             </button>
-            <button>
+            <button className="navigation-button">
                 <FontAwesomeIcon icon={faBriefcase} />
             </button>
-            <button>
+            <button className="navigation-button">
                 <FontAwesomeIcon icon={faCode} />
             </button>
-            <button>
+            <button className="navigation-button">
                 <FontAwesomeIcon icon={faGraduationCap} />
             </button>
             { strings.getLanguage() == "pl" ? (
-                <button onClick={() => changeLanguage("en")}>
+                <button className="navigation-button" onClick={() => changeLanguage("en")}>
                     <img className="rounded-full" src="https://flagsapi.com/PL/shiny/32.png" />
                 </button>
             ) : (
-                <button onClick={() => changeLanguage("pl")}>
+                <button className="navigation-button" onClick={() => changeLanguage("pl")}>
                     <img className="rounded-full" src="https://flagsapi.com/US/shiny/32.png" />
                 </button>
             )}
-            <button onClick={props.darkModeChangeFunction}>
+            <button className="navigation-button rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl active" onClick={props.darkModeChangeFunction}>
                 <FontAwesomeIcon icon={faMoon} />
             </button>
         </div>

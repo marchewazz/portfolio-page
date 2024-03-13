@@ -6,14 +6,14 @@ export default function Experience() {
             <h4 className="dark:text-gold text-3xl font-bold text-center">
                 { strings.experience.header }
             </h4>
-            <div>
+            <div className="flex flex-col divide-y-2 dark:divide-gold divide-dashed">
                 { strings.experience.jobs.map((job) => {
                     return (
-                        <div>
+                        <div className="text-lg py-4">
                             <p className="dark:text-gold">
-                                { job.position }, { job.company }
+                                { job.position }, <span className="font-bold italic">{ job.company }</span>
                             </p>
-                            <p  className="dark:text-light-text">
+                            <p  className="dark:text-light-text font-semibold">
                                 { job.time }
                             </p>
                             <p className="dark:text-gold">

@@ -44,17 +44,62 @@ const strings = new LocalizedStrings({
         projects: [
           {
             title: "Title 1",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "HTML5"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              }
+            ]
           },
           {
             title: "Title 2",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "React", "Tailwind"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              },
+              {
+                title: "Source - frontend",
+                link: "dummy"
+              },
+              {
+                title: "Source - backend",
+                link: "dummy"
+              },
+            ]
           },
           {
             title: "Title 3",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "React", "Tailwind"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              },
+              {
+                title: "Source - frontend",
+                link: "dummy"
+              },
+              {
+                title: "Source - backend",
+                link: "dummy"
+              },
+            ]
           }
-        ]
+        ],
+        showLinks: "Show links",
+        hide: "Hide"
       }
     },
     pl: {
@@ -100,17 +145,62 @@ const strings = new LocalizedStrings({
         projects: [
           {
             title: "Title 1",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "HTML5"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              }
+            ]
           },
           {
             title: "Title 2",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "React", "Tailwind"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              },
+              {
+                title: "Source - frontend",
+                link: "dummy"
+              },
+              {
+                title: "Source - backend",
+                link: "dummy"
+              },
+            ]
           },
           {
             title: "Title 3",
-            screen: "https://picsum.photos/50"
+            screen: "https://picsum.photos/1200/1300",
+            technologies: [
+              "React", "Tailwind"
+            ],
+            links: [
+              {
+                title: "Demo",
+                link: "dummy"
+              },
+              {
+                title: "Source - frontend",
+                link: "dummy"
+              },
+              {
+                title: "Source - backend",
+                link: "dummy"
+              },
+            ]
           }
-        ]
+        ],
+        showLinks: "Pokaż linki",
+        hide: "Ukryj"
       }
     }
 });

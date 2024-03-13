@@ -1,4 +1,5 @@
 import strings from "../../utilities/strings";
+import ProjectDisplay from "./Projects/ProjectDisplay";
 
 export default function Projects() {
     return (
@@ -8,14 +9,7 @@ export default function Projects() {
             </h4>
             <div>
                 { strings.projects.projects.map((project) => {
-                    return (
-                        <div className="flex dark:text-gold">
-                            <img src={project.screen} alt="" />
-                            <p>
-                                { project.title }
-                            </p>
-                        </div>
-                    )
+                    return <ProjectDisplay project={project} />
                 })}
             </div>
         </div>
