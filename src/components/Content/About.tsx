@@ -12,7 +12,7 @@ import JSSwiper from "./Skills/JSSwiper";
 
 export default function About() {
     return (
-        <section>
+        <section id="about">
             <div className="flex justify-between">
                 <div>
                     <p className="dark:text-gold text-4xl font-semibold">

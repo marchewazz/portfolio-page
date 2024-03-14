@@ -3,7 +3,7 @@ import Content from "./components/Content"
 import NavigationButtons from "./components/NavigationButtons"
 import strings from "./utilities/strings"
 
-import { animate, motion, stagger } from "framer-motion"
+import { animate, stagger } from "framer-motion"
 
 function App() {
 
@@ -57,7 +57,3 @@ function App() {
 }
 
 export default App
-function setLanguageReady(arg0: boolean) {
-  throw new Error("Function not implemented.")
-}
-

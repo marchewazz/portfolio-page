@@ -2,7 +2,7 @@ import strings from "../../utilities/strings";
 
 export default function Experience() {
     return (
-        <section>
+        <section id="experience">
             <h4 className="dark:text-gold text-3xl font-bold text-center">
                 { strings.experience.header }
             </h4>

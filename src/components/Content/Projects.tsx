@@ -3,7 +3,7 @@ import ProjectDisplay from "./Projects/ProjectDisplay";
 
 export default function Projects() {
     return (
-        <div>
+        <div id="projects">
             <h4 className="dark:text-gold text-3xl font-bold text-center">
                 { strings.projects.header }
             </h4>
