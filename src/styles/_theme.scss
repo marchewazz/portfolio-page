@@ -54,15 +54,13 @@ select {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   margin: 1rem;
   background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FAB95B;
+  background: #3F0165;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -70,7 +68,14 @@ select {
   -o-border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+  background: #31024D;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #bd8b44;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #FAB95B;
 }

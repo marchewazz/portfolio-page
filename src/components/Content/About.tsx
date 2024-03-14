@@ -15,10 +15,10 @@ export default function About() {
         <section id="about">
             <div className="flex justify-between">
                 <div>
-                    <p className="dark:text-gold text-4xl font-semibold">
+                    <p className="text-main-purple dark:text-gold text-4xl font-semibold">
                         Mateusz <br /> Marchewczyk
                     </p>
-                    <p className="dark:text-light-text text-xl">
+                    <p className="text-dark-text dark:text-light-text text-xl">
                         Junior Front-end Developer
                     </p>
                 </div>
@@ -54,19 +54,19 @@ export default function About() {
                 </div>
             </div>
             <div>
-                <h4 className="dark:text-gold text-3xl font-bold text-center">
+                <h4 className="text-main-purple dark:text-gold text-3xl font-bold text-center">
                     { strings.about.header }
                 </h4>
                 { strings.about.paragraphs.map((paragraph) => {
                     return (
-                        <p className="dark:text-gold">
+                        <p className="text-dark-text dark:text-gold">
                             { paragraph }
                         </p>
                     )
                 })}
             </div>
             <div>
-                <h4 className="dark:text-gold text-3xl font-bold text-center">
+                <h4 className="text-main-purple dark:text-gold text-3xl font-bold text-center">
                     { strings.about.skills }
                 </h4>
                 <FrontSwiper />

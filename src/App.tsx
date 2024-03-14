@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="bg-main-blue w-screen h-screen relative">
+      <main className="bg-white dark:bg-main-blue w-screen h-screen relative">
         { languageReady ? (
           <>
             <div ref={leftRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute rotate-12 -top-14 -left-16 rounded-3xl shadow-2xl shadow-black" />
