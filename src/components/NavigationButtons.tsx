@@ -2,7 +2,13 @@ import { faBriefcase, faCode, faGraduationCap, faMoon, faUser } from "@fortaweso
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
 
-export default function NavigationButtons(props: { darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>, innerRef: React.MutableRefObject<null> }) {
+export default function NavigationButtons(props: { 
+    darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>, 
+    innerRef: React.MutableRefObject<null> }) {
+
+    function scrollTo(id: string) {
+        document.getElementById(id)?.scrollIntoView()
+    }
 
     function changeLanguage(language: string): void {
         localStorage.setItem("language", language)
@@ -13,16 +19,16 @@ export default function NavigationButtons(props: { darkModeChangeFunction: React
         <div ref={props.innerRef} className="absolute text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:left-auto sm:right-0 sm:top-1/2 sm:bottom-auto bg-dark-blue z-50 
         border-r border-l border-t md:border-b md:border-r-0 border-white
         rounded-t-3xl sm:rounded-tr-none md:rounded-l-3xl">
-            <button data-to-scrollspy-id="about" className="navigation-button rounded-tl-3xl">
+            <button onClick={() => scrollTo("about")} data-to-scrollspy-id="about" className="navigation-button rounded-tl-3xl">
                 <FontAwesomeIcon icon={faUser} />
             </button>
-            <button data-to-scrollspy-id="experience" className="navigation-button">
+            <button onClick={() => scrollTo("experience")} data-to-scrollspy-id="experience" className="navigation-button">
                 <FontAwesomeIcon icon={faBriefcase} />
             </button>
-            <button data-to-scrollspy-id="projects" className="navigation-button">
+            <button onClick={() => scrollTo("projects")} data-to-scrollspy-id="projects" className="navigation-button">
                 <FontAwesomeIcon icon={faCode} />
             </button>
-            <button data-to-scrollspy-id="education" className="navigation-button">
+            <button onClick={() => scrollTo("education")} data-to-scrollspy-id="education" className="navigation-button">
                 <FontAwesomeIcon icon={faGraduationCap} />
             </button>
             { strings.getLanguage() == "pl" ? (
