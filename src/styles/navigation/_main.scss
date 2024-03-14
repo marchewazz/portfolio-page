@@ -1,11 +1,17 @@
-.active-scroll-spy {
+.dark .active-scroll-spy {
     background-color: white;
     color: #080c37;
+}
+
+.active-scroll-spy {
+    background-color: #3F0165;
+    color: white;
 }
 
 @layer components {
     .navigation-button {
         @apply p-3 flex items-center justify-center transition-all 
-        hover:bg-white hover:text-dark-blue
+        text-main-purple hover:bg-main-purple hover:text-white
+        dark:hover:bg-white dark:hover:text-dark-blue dark:text-white
     }
 }
