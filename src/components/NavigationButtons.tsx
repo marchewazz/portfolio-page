@@ -16,8 +16,10 @@ export default function NavigationButtons(props: {
     }
 
     return (
-        <div ref={props.innerRef} className="absolute text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:left-auto sm:right-0 sm:top-1/2 sm:bottom-auto bg-dark-blue z-50 
-        border-r border-l border-t md:border-b md:border-r-0 border-white
+        <div ref={props.innerRef} className="absolute text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:left-auto sm:right-0 sm:top-1/2 sm:bottom-auto z-50 
+        border-r border-l border-t md:border-b md:border-r-0
+        border-main-purple
+        dark:border-white dark:bg-dark-blue
         rounded-t-3xl sm:rounded-tr-none md:rounded-l-3xl">
             <button onClick={() => scrollTo("about")} data-to-scrollspy-id="about" className="navigation-button rounded-tl-3xl">
                 <FontAwesomeIcon icon={faUser} />

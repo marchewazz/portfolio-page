@@ -4,7 +4,7 @@ import ProjectDisplay from "./Projects/ProjectDisplay";
 export default function Projects() {
     return (
         <div id="projects">
-            <h4 className="dark:text-gold text-3xl font-bold text-center">
+            <h4 className="text-main-purple dark:text-gold text-3xl font-bold text-center">
                 { strings.projects.header }
             </h4>
             <div>
