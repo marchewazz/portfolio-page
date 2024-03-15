@@ -14,6 +14,8 @@ const strings = new LocalizedStrings({
           `This competetive nature might be taken from my other big passion which is sport. Other than that I read books and listen to podcasts while walking.`,
           `If you're interested in collaborating or discussing any topic further, please don't hesitate to reach out via LinkedIn or email. I look forward to connecting with you! :D`
         ],
+        readMore: "Read more",
+        readLess: "Read less",
         skills: "Skills"
       },
       experience: {
@@ -115,6 +117,8 @@ const strings = new LocalizedStrings({
           `Paragraph`,
           `Paragraph`
         ],
+        readMore: "Czytaj więcej",
+        readLess: "Czytaj mniej",
         skills: "Umiejętności"
       },
       experience: {
