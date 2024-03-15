@@ -7,12 +7,12 @@ const strings = new LocalizedStrings({
         englishCV: "English CV",
         polishCV: "Polish CV",
         paragraphs: [
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph"
+          `I('ve) been self-made from the dribble" - that quote from one of Nipsey Hussle's song could well describe my coding experience.`,
+          `I have had a contact with computers since my very, very young age. People in my family have been always asking me for help if they bought a new phone or their printer isn't working. Also, they were saying that I gonna be a computer guy in the future. `,
+          `Once I decided becoming a developer is my carrer path I look for nothing but opportunities to grow. I believe self-taught is the best way to learn because you fail over and over again but at the end you figure out what you need. Thanks to this approach I was able to gain my first commercial experience which I consider my biggest achievement so far.`,
+          `In fact, getting something done is one of the best feeling, however, it's always very short feeling because as a competetive person I always seek for a next goal. Apart from my competetive nature I am communicative, ambitious, willing to learn and ready for every challenge.`,
+          `This competetive nature might be taken from my other big passion which is sport. Other than that I read books and listen to podcasts while walking.`,
+          `If you're interested in collaborating or discussing any topic further, please don't hesitate to reach out via LinkedIn or email. I look forward to connecting with you! :D`
         ],
         skills: "Skills"
       },
@@ -108,12 +108,12 @@ const strings = new LocalizedStrings({
         englishCV: "CV po angielsku",
         polishCV: "CV po polsku",
         paragraphs: [
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph",
-          "Paragraph"
+          `Paragraph`,
+          `Paragraph`,
+          `Paragraph`,
+          `Paragraph`,
+          `Paragraph`,
+          `Paragraph`
         ],
         skills: "Umiejętności"
       },

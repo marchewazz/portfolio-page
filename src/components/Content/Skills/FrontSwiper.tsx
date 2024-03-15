@@ -4,7 +4,15 @@ export default function FrontSwiper() {
     return (
         <Swiper
         spaceBetween={50}
-        slidesPerView={3.5}>
+        slidesPerView={1.5}
+        breakpoints={{
+            480: {
+                slidesPerView: 2.5
+            },
+            992: {
+                slidesPerView: 3.5
+            },
+        }}>
             <SwiperSlide>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
             </SwiperSlide>

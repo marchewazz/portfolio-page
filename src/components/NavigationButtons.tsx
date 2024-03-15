@@ -7,7 +7,7 @@ export default function NavigationButtons(props: {
     innerRef: React.MutableRefObject<null> }) {
 
     function scrollTo(id: string) {
-        document.getElementById(id)?.scrollIntoView()
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
     }
 
     function changeLanguage(language: string): void {
