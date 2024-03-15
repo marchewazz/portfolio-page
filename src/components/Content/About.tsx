@@ -42,7 +42,7 @@ export default function About() {
                         <span className="hidden sm:group-hover:block text-nowrap">marchewazz</span>
                     </a>
                 </div>
-                <div className="flex justify-evenly text-gold">
+                <div className="flex flex-col gap-2 sm:flex-row sm:justify-evenly text-gold">
                     <a className="resume-link group" href={resume} download="cv">
                         { strings.about.englishCV }
                         <FontAwesomeIcon icon={faFileArrowDown} className="hidden group-hover:block" size="lg" />
