@@ -3,7 +3,7 @@ import strings from "../../utilities/strings";
 export default function Experience() {
     return (
         <section id="experience">
-            <h4 className="text-main-purple dark:text-gold text-3xl font-bold text-center">
+            <h4 className="text-main-purple dark:text-gold text-2xl sm:text-3xl font-bold text-center my-4">
                 { strings.experience.header }
             </h4>
             <div className="flex flex-col divide-y-2 divide-main-purple dark:divide-gold divide-dashed">

@@ -42,7 +42,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                                     first:rounded-t-lg last:rounded-b-lg
                                     hover:bg-main-purple hover:text-light-text
                                     dark:text-dark-blue dark:hover:text-white
-                                    hover:bg-dark-blue " 
+                                    dark:hover:bg-dark-blue" 
                                     href={link.link} target="_blank">{ link.title }</a>
                                 )
                             })}

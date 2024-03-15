@@ -42,7 +42,7 @@ export default function About() {
                         <span className="hidden sm:group-hover:block text-nowrap">marchewazz</span>
                     </a>
                 </div>
-                <div className="mb-4 flex justify-evenly text-gold">
+                <div className="flex justify-evenly text-gold">
                     <a className="resume-link group" href={resume} download="cv">
                         { strings.about.englishCV }
                         <FontAwesomeIcon icon={faFileArrowDown} className="hidden group-hover:block" size="lg" />
@@ -54,7 +54,7 @@ export default function About() {
                 </div>
             </div>
             <div>
-                <h4 className="text-main-purple dark:text-gold text-2xl sm:text-3xl font-bold text-center mb-4">
+                <h4 className="text-main-purple dark:text-gold text-2xl sm:text-3xl font-bold text-center my-4">
                     { strings.about.header }
                 </h4>
                 { strings.about.paragraphs.map((paragraph) => {
@@ -66,7 +66,7 @@ export default function About() {
                 })}
             </div>
             <div>
-                <h4 className="text-main-purple dark:text-gold text-2xl sm:text-3xl font-bold text-center mb-4">
+                <h4 className="text-main-purple dark:text-gold text-2xl sm:text-3xl font-bold text-center my-4">
                     { strings.about.skills }
                 </h4>
                 <FrontSwiper />
