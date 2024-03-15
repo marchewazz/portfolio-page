@@ -8,10 +8,10 @@
     }
 
     .resume-link {
-        @apply border p-2 rounded flex justify-center items-center gap-2 transition-all duration-300 ease-in-out w-36
+        @apply border p-2 rounded flex justify-center items-center gap-2 transition-all duration-300 ease-in-out sm:w-56
         border-main-purple text-main-purple
         hover:bg-main-purple hover:text-light-text
         dark:border-gold dark:text-gold
-        hover:dark:bg-gold hover:dark:text-dark-blue hover:justify-between
+        hover:dark:bg-gold hover:dark:text-dark-blue hover:justify-evenly
     }
 }
