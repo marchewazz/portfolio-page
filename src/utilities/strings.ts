@@ -97,7 +97,7 @@ const strings = new LocalizedStrings({
       },
       education: {
         header: "Education",
-        school: "Technikum nr 1 w Gliwicach",
+        school: "Technical School number 1, Gliwice",
         profil: "Programmer technician",
         time: "Sep 2019 - Apr 2024"
       }
@@ -198,7 +198,7 @@ const strings = new LocalizedStrings({
       },
       education: {
         header: "Edukacja",
-        school: "Technikum nr 1 w Gliwicach",
+        school: "Technikum nr 1, Gliwice",
         profil: "Technik programista",
         time: "wrz 2019 - kwi 2024"
       }
