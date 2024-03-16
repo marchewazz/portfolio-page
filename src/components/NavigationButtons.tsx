@@ -1,4 +1,4 @@
-import { faBriefcase, faCode, faGraduationCap, faMoon, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faBriefcase, faCode, faGraduationCap, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
 
@@ -42,8 +42,9 @@ export default function NavigationButtons(props: {
                     <img className="rounded-full" src="https://flagsapi.com/US/shiny/32.png" />
                 </button>
             )}
-            <button className="navigation-button rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl" onClick={props.darkModeChangeFunction}>
-                <FontAwesomeIcon icon={faMoon} />
+            <button className="navigation-button rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl group" onClick={props.darkModeChangeFunction}>
+                <FontAwesomeIcon className="hidden dark:block" icon={faMoon} />
+                <FontAwesomeIcon className="dark:hidden text-yellow-600 group-hover:text-white transition-all duration-200 ease-in-out" icon={faSun} />
             </button>
         </div>
     )
