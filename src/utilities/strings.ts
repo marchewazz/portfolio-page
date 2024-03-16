@@ -45,57 +45,49 @@ const strings = new LocalizedStrings({
         header: "Projects",
         projects: [
           {
-            title: "Title 1",
+            title: "CODERHINO company page",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "HTML5"
+              "Next.js", "SCSS"
             ],
             links: [
               {
                 title: "Demo",
-                link: "dummy"
+                link: "https://coderhino.cc"
               }
             ]
           },
           {
-            title: "Title 2",
+            title: "Video rental app",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "React", "Tailwind"
+              "React", "Tailwind", "SCSS", "Express.js with socket.io", "MongoDB"
             ],
             links: [
               {
                 title: "Demo",
-                link: "dummy"
+                link: "https://video-rental.onrender.com"
               },
               {
                 title: "Source - frontend",
-                link: "dummy"
+                link: "https://github.com/marchewazz/video-rental-react"
               },
               {
                 title: "Source - backend",
-                link: "dummy"
+                link: "https://github.com/marchewazz/video-rental-server"
               },
             ]
           },
           {
-            title: "Title 3",
+            title: "This website",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "React", "Tailwind"
+              "React", "Tailwind", "SCSS"
             ],
             links: [
               {
-                title: "Demo",
-                link: "dummy"
-              },
-              {
-                title: "Source - frontend",
-                link: "dummy"
-              },
-              {
-                title: "Source - backend",
-                link: "dummy"
+                title: "Source",
+                link: "https://github.com/marchewazz/portfolio-page"
               },
             ]
           }
@@ -154,57 +146,49 @@ const strings = new LocalizedStrings({
         header: "Projekty",
         projects: [
           {
-            title: "Title 1",
+            title: "Strona firmowa CODERHINO ",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "HTML5"
+              "Next.js", "SCSS"
             ],
             links: [
               {
                 title: "Demo",
-                link: "dummy"
+                link: "https://coderhino.cc"
               }
             ]
           },
           {
-            title: "Title 2",
+            title: "Aplikacja do wypożyczania wideo",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "React", "Tailwind"
+              "React", "Tailwind", "SCSS", "Express.js with socket.io", "MongoDB"
             ],
             links: [
               {
                 title: "Demo",
-                link: "dummy"
+                link: "https://video-rental.onrender.com"
               },
               {
-                title: "Source - frontend",
-                link: "dummy"
+                title: "Kod - frontend",
+                link: "https://github.com/marchewazz/video-rental-react"
               },
               {
-                title: "Source - backend",
-                link: "dummy"
+                title: "Kod - backend",
+                link: "https://github.com/marchewazz/video-rental-server"
               },
             ]
           },
           {
-            title: "Title 3",
+            title: "Strona na której jesteś",
             screen: "https://picsum.photos/1200/1300",
             technologies: [
-              "React", "Tailwind"
+              "React", "Tailwind", "SCSS"
             ],
             links: [
               {
-                title: "Demo",
-                link: "dummy"
-              },
-              {
-                title: "Source - frontend",
-                link: "dummy"
-              },
-              {
-                title: "Source - backend",
-                link: "dummy"
+                title: "Kod",
+                link: "https://github.com/marchewazz/portfolio-page"
               },
             ]
           }

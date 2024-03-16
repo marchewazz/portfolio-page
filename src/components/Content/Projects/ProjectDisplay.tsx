@@ -20,7 +20,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                 <img className="transition-all duration-200 ease-in-out aspect-video border-4 border-black rounded-3xl" src={props.project.screen} alt="" />
             </div>
             <div className="flex flex-col sm:w-1/2">
-                <p className="sm:text-center text-main-purple dark:text-gold italic font-bold transition-all duration-200 ease-in-out">
+                <p className="text-main-purple dark:text-gold italic font-bold transition-all duration-200 ease-in-out">
                     { props.project.title }
                 </p>
                 <p className="text-dark-text dark:text-light-text transition-all duration-200 ease-in-out">
