@@ -54,13 +54,13 @@ function App() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="bg-white dark:bg-main-blue w-screen h-screen relative">
+      <main className="bg-white dark:bg-main-blue w-screen h-screen relative transition-colors duration-200 ease-in-out">
         { languageReady ? (
           <>
-            <div ref={leftRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute rotate-12 -top-14 -left-16 rounded-3xl shadow-2xl shadow-black" />
+            <div ref={leftRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute rotate-12 -top-14 -left-16 rounded-3xl shadow-2xl shadow-black transition-colors duration-200 ease-in-out" />
             <Content innerRef={contentRef} />
             <NavigationButtons innerRef={navigationButtonsRef} darkModeChangeFunction={changeDarkMode}  />
-            <div ref={rightRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute -rotate-12 -top-14 -right-16 rounded-3xl shadow-2xl shadow-black" />
+            <div ref={rightRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute -rotate-12 -top-14 -right-16 rounded-3xl shadow-2xl shadow-black transition-colors duration-200 ease-in-out" />
           </>
         ) : (null)}
       </main>
