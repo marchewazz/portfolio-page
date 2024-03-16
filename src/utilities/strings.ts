@@ -116,12 +116,12 @@ const strings = new LocalizedStrings({
         englishCV: "CV po angielsku",
         polishCV: "CV po polsku",
         paragraphs: [
-          `Paragraph`,
-          `Paragraph`,
-          `Paragraph`,
-          `Paragraph`,
-          `Paragraph`,
-          `Paragraph`
+          `I('ve) been self-made from the dribble" - ten cytat z jednej z piosenek Nipseya Hussle'a dobrze opisuje moje dotychczasowe doświadczenie z programowaniem.`,
+          `Od małego miałem kontakt z komputerami. Osoby z mojej rodziny często pytały mnie o pomoc z nowym telefonem lub z niedziałającą drukarką. Poza tym mówili często, że zostanę "komputerowcem" w przyszłości.`,
+          `Gdy zdecydowałem się zostać developerem patrzę tylko na możliwości rozwoju. Uważam, że "self-taught" to najlepsza droga, raz po raz nie udaje ci się ale koniec końców dochodzisz do rozwiązania. Dzięki temu mogłem zdobyć pierwsze doświadczenie komercyjne co uważam za swój największych sukces dotychczas.`,
+          `Dokończenie czegoś to jedno z najlepszych uczuć, choć nie trwa długo, jako osoba ambitna zawsze patrzę na kolejne cele przede mną. Poza tym jestem komunikatywny, chętny do nauki i gotowy na następne wyzwania.`,
+          `Moja dusza rywalizacji wzięła się z innej mojej pasji, sportu. Poza tym czytam książki i spaceruję słuchając podcastów.`,
+          `Jeśli jesteś zainteresowany/a współpracą lub omówieniem jakiegokolwiek innego tematu, odezwij się w wiadomości prywatnej lub mailu. Do usłyszenia :D`
         ],
         readMore: "Czytaj więcej",
         readLess: "Czytaj mniej",
