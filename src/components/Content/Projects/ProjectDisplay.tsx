@@ -27,7 +27,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                     { props.project.technologies.join(", ")}
                 </p>
                 <div className="relative mt-auto flex justify-center">
-                    <button className="text-light-text dark:bg-gold dark:text-dark-blue p-2 rounded-lg font-semibold border border-transparent
+                    <button className="text-light-text dark:bg-gold dark:text-dark-blue p-2 rounded-lg font-semibold border border-transparent w-36
                     transition-all duration-200 ease-in-out
                     bg-main-purple hover:border-main-purple hover:bg-light-background hover:text-main-purple
                     dark:hover:border-gold dark:hover:bg-dark-blue dark:hover:text-gold"
@@ -39,7 +39,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                         <div className="absolute flex flex-col bg-white bottom-[calc(100%+4px)] border border-black shadow-lg shadow-black z-50 rounded-lg w-max">
                             { props.project.links.map((link) => {
                                 return (
-                                    <a className="p-2 font-semibold 
+                                    <a className="p-2 font-semibold text-center
                                     transition-all duration-200 ease-in-out
                                     first:rounded-t-lg last:rounded-b-lg
                                     hover:bg-main-purple hover:text-light-text
