@@ -15,7 +15,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
 
     return (
         <div className="flex flex-col sm:flex-row py-3 gap-4">
-            <div className="relative sm:w-1/2">
+            <div className="relative sm:w-3/5">
                 <div className="transition-all duration-200 ease-in-out absolute shadow-[inset_0_8px_8px_0] shadow-black w-full h-full z-40 rounded-3xl" />
                 <img className="transition-all duration-200 ease-in-out aspect-video border-4 border-black rounded-3xl" src={props.project.screen} alt="" />
             </div>

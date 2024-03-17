@@ -46,7 +46,7 @@ const strings = new LocalizedStrings({
         projects: [
           {
             title: "CODERHINO company page",
-            screen: "https://picsum.photos/1200/1300",
+            screen: "coderhino.png",
             technologies: [
               "Next.js", "SCSS"
             ],
@@ -59,7 +59,7 @@ const strings = new LocalizedStrings({
           },
           {
             title: "Video rental app",
-            screen: "https://picsum.photos/1200/1300",
+            screen: "video-rental-app.png",
             technologies: [
               "React", "Tailwind", "SCSS", "Express.js with socket.io", "MongoDB"
             ],
@@ -80,7 +80,7 @@ const strings = new LocalizedStrings({
           },
           {
             title: "This website",
-            screen: "https://picsum.photos/1200/1300",
+            screen: "portfolio.png",
             technologies: [
               "React", "Tailwind", "SCSS"
             ],
@@ -146,8 +146,8 @@ const strings = new LocalizedStrings({
         header: "Projekty",
         projects: [
           {
-            title: "Strona firmowa CODERHINO ",
-            screen: "https://picsum.photos/1200/1300",
+            title: "Strona firmowa CODERHINO",
+            screen: "coderhino.png",
             technologies: [
               "Next.js", "SCSS"
             ],
@@ -160,7 +160,7 @@ const strings = new LocalizedStrings({
           },
           {
             title: "Aplikacja do wypożyczania wideo",
-            screen: "https://picsum.photos/1200/1300",
+            screen: "video-rental-app.png",
             technologies: [
               "React", "Tailwind", "SCSS", "Express.js with socket.io", "MongoDB"
             ],
@@ -180,8 +180,8 @@ const strings = new LocalizedStrings({
             ]
           },
           {
-            title: "Strona na której jesteś",
-            screen: "https://picsum.photos/1200/1300",
+            title: "Strona na której teraz jesteś",
+            screen: "portfolio.png",
             technologies: [
               "React", "Tailwind", "SCSS"
             ],
