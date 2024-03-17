@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import strings from "../../../utilities/strings";
+
+import { animate } from "framer-motion"
 
 export default function ProjectDisplay(props: Readonly<{ project: {
     title: string;
@@ -12,6 +14,23 @@ export default function ProjectDisplay(props: Readonly<{ project: {
 }}>) {
 
     const [showLinks, setShowLinks] = useState<boolean>(false)
+
+    const linksRef = useRef(null)
+
+    function showLinksAnimation() {
+        setShowLinks(true)    
+    }
+
+    useEffect(() => {
+      if (showLinks) animate(linksRef.current, { y: [20, 0], opacity: [0, 1] }, { duration: 0.2 })
+    }, [showLinks])
+    
+
+    function hideLinksAnimation() {
+        animate(linksRef.current, { y: [0, 20], opacity: [1, 0] }, { duration: 0.2 }).then(() => {
+            setShowLinks(false)
+        })
+    }
 
     return (
         <div className="flex flex-col sm:flex-row py-3 gap-4">
@@ -31,12 +50,12 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                     transition-all duration-200 ease-in-out
                     bg-main-purple hover:border-main-purple hover:bg-light-background hover:text-main-purple
                     dark:hover:border-gold dark:hover:bg-dark-blue dark:hover:text-gold"
-                    onClick={() => setShowLinks(!showLinks)}>
+                    onClick={() => { if (showLinks) hideLinksAnimation(); else showLinksAnimation()}}>
                         { showLinks ? strings.projects.hide : strings.projects.showLinks }
                     </button>
                     {
                         showLinks && 
-                        <div className="absolute flex flex-col bg-white bottom-[calc(100%+4px)] border border-black shadow-lg shadow-black z-50 rounded-lg w-max">
+                        <div ref={linksRef} className="absolute flex flex-col bg-white bottom-[calc(100%+4px)] border border-black shadow-lg shadow-black z-50 rounded-lg w-max">
                             { props.project.links.map((link) => {
                                 return (
                                     <a className="p-2 font-semibold text-center
