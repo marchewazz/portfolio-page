@@ -16,7 +16,7 @@ export default function Experience() {
                             <p  className="text-dark-text dark:text-light-text font-semibold transition-all duration-200 ease-in-out">
                                 { job.time }
                             </p>
-                            <p className="text-dark-text dark:text-gold transition-all duration-200 ease-in-out">
+                            <p className="text-dark-text dark:text-gold transition-all duration-200 ease-in-out mt-2">
                                 { job.description }
                             </p>
                         </div>

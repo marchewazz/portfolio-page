@@ -24,20 +24,20 @@ const strings = new LocalizedStrings({
           {
             company: "CODERHINO",
             position: "Junior Front-end Developer",
-            time: "Jun 2023 - obecnie",
-            description: "Description"
+            time: "Jun 2023 - Currently",
+            description: "Now my responsibilities are very similar. In the meantime apart from websites I had created a PDF generating app using Puppeteer library."
           },
           {
             company: "CODERHINO",
             position: "Intern Front-end Developer",
             time: "Mar 2023 - Jun 2023",
-            description: "Description"
+            description: "During my internship I had been creating websites based on Figma blueprints. Other than that I had been writing JavaScript scripts and I had known the basics of Jira."
           },
           {
             company: "CODERHINO",
             position: "Trainee",
             time: "May 2022 - May 2022",
-            description: "Description"
+            description: "During my 1-month traineeship I had been working with an app to fetch, process and send to the frontend via sockets real-time data from a League of Legends game client."
           },
         ]
       },
@@ -126,19 +126,19 @@ const strings = new LocalizedStrings({
             company: "CODERHINO",
             position: "Junior Front-end Developer",
             time: "cze 2023 - obecnie",
-            description: "Description"
+            description: "Obecnie moje zadania są bardzo podobne. W międzyczasie oprócz stron internetowych, napisałem aplikację do generowania PDF przy użyciu biblioteki Puppeteer."
           },
           {
             company: "CODERHINO",
             position: "Stażysta Front-end Developer",
             time: "mar 2023 - cze 2023",
-            description: "Description"
+            description: "Podczas stażu tworzyłem strony internetowe w oparciu o projekty w Figmie. Poza tym pisałem skrypty w JavaScript oraz poznałem pracę z Jirą."
           },
           {
             company: "CODERHINO",
             position: "Praktykant",
             time: "maj 2022 - maj 2022",
-            description: "Description"
+            description: "Podczas miesięcznych praktyk pracowałem przy aplikacji zbierającej i przetwarzającej dane real-time z klienta gry League of Legends"
           },
         ]
       },
