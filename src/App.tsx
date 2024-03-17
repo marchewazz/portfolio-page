@@ -60,8 +60,6 @@ function App() {
       }
     }
   }, [languageReady])
-  
-  console.log(typeof(changeLanguage))
 
   return (
     <div className={`${darkMode && "dark"}`}>

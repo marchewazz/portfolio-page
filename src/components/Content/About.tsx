@@ -28,8 +28,8 @@ export default function About() {
                 </div>
                 <img className="rounded w-24 sm:w-auto" src="https://picsum.photos/100" alt="" />
             </div>
-            <div>
-                <div className="mt-4 mb-2 flex justify-between sm:justify-around text-gold">
+            <div className="mx-4 md:mx-8 lg:mx-12">
+                <div className="mt-4 mb-2 flex justify-between text-gold">
                     <a className="about-link group sm:hover:w-80" href="mailto:marchewczykmateusz24@gmail.com">
                         <FontAwesomeIcon icon={faEnvelope} className="sm:group-hover:hidden" size="lg" />
                         <span className="hidden sm:group-hover:block">marchewczykmateusz24@gmail.com</span>
@@ -46,7 +46,7 @@ export default function About() {
                         <span className="hidden sm:group-hover:block text-nowrap">marchewazz</span>
                     </a>
                 </div>
-                <div className="flex flex-col gap-2 sm:flex-row sm:justify-evenly text-gold">
+                <div className="flex flex-col gap-2 justify-between sm:flex-row text-gold">
                     <a className="resume-link group" href={resume} download="cv">
                         { strings.about.englishCV }
                         <FontAwesomeIcon icon={faFileArrowDown} className="hidden group-hover:block" size="lg" />
