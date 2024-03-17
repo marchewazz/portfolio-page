@@ -3,16 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
 
 export default function NavigationButtons(props: { 
+    changeLanguageFunction: Function,
     darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>, 
     innerRef: React.MutableRefObject<null> }) {
 
     function scrollTo(id: string) {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-    }
-
-    function changeLanguage(language: string): void {
-        localStorage.setItem("language", language)
-        window.location.reload();
     }
 
     return (
@@ -34,11 +30,11 @@ export default function NavigationButtons(props: {
                 <FontAwesomeIcon icon={faGraduationCap} />
             </button>
             { strings.getLanguage() == "pl" ? (
-                <button className="navigation-button" onClick={() => changeLanguage("en")}>
+                <button className="navigation-button" onClick={() => props.changeLanguageFunction("en")}>
                     <img className="rounded-full" src="https://flagsapi.com/PL/shiny/32.png" />
                 </button>
             ) : (
-                <button className="navigation-button" onClick={() => changeLanguage("pl")}>
+                <button className="navigation-button" onClick={() => props.changeLanguageFunction("pl")}>
                     <img className="rounded-full" src="https://flagsapi.com/US/shiny/32.png" />
                 </button>
             )}
