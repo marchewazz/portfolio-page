@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function JSSwiper() {
     return (
-        <Swiper
+        <Swiper className="my-4"
         spaceBetween={50}
         slidesPerView={1.5}
         breakpoints={{
-            480: {
+            380: {
                 slidesPerView: 2.5
             },
             992: {
@@ -17,13 +17,14 @@ export default function JSSwiper() {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                <img className="dark:hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                <img className="hidden dark:block" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" />
+            </SwiperSlide>
+            <SwiperSlide>   
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-line-wordmark.svg" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
+                <img className="dark:invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />

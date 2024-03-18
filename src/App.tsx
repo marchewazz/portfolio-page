@@ -5,11 +5,15 @@ import strings from "./utilities/strings"
 
 import { animate, stagger } from "framer-motion"
 
+import axios from "axios";
+
 function App() {
 
   const [darkMode, setDarkMode] = useState<boolean>(localStorage.getItem("darkMode") == "true" || false)
   const [languageReady, setLanguageReady] = useState<boolean>(false)
   
+  const [languageState, setlanguageState] = useState<string>("")
+
   const leftRectangleRef: React.MutableRefObject<null> = useRef(null)
   const contentRef: React.MutableRefObject<null> = useRef(null)
   const navigationButtonsRef: React.MutableRefObject<null> = useRef(null)
@@ -20,10 +24,20 @@ function App() {
     localStorage.setItem("darkMode", (!darkMode.valueOf()).toString())
   }  
 
+  
+  function changeLanguage(language: string): void {
+    localStorage.setItem("language", language)
+    strings.setLanguage(language)
+    setlanguageState(language);
+  }
+
   useEffect(() => {
     if (localStorage.getItem("language") == "pl" || localStorage.getItem("language") == "en") strings.setLanguage(localStorage.getItem("language") || "")
     else localStorage.setItem("language", strings.getLanguage())
+    setlanguageState(strings.getLanguage())
     setLanguageReady(true)
+ 
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/test`)
   }, [])
 
   useEffect(() => {
@@ -50,17 +64,16 @@ function App() {
       }
     }
   }, [languageReady])
-  
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <main className="bg-white dark:bg-main-blue w-screen h-screen relative">
+      <main className="bg-white dark:bg-main-blue w-screen h-screen relative transition-colors duration-200 ease-in-out">
         { languageReady ? (
           <>
-            <div ref={leftRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute rotate-12 -top-14 -left-16 rounded-3xl shadow-2xl shadow-black" />
+            <div ref={leftRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute rotate-12 -top-14 -left-16 rounded-3xl shadow-2xl shadow-black transition-colors duration-200 ease-in-out" />
             <Content innerRef={contentRef} />
-            <NavigationButtons innerRef={navigationButtonsRef} darkModeChangeFunction={changeDarkMode}  />
-            <div ref={rightRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute -rotate-12 -top-14 -right-16 rounded-3xl shadow-2xl shadow-black" />
+            <NavigationButtons changeLanguageFunction={changeLanguage} innerRef={navigationButtonsRef} darkModeChangeFunction={changeDarkMode}  />
+            <div ref={rightRectangleRef} className="bg-white dark:bg-light-blue w-full h-96 absolute -rotate-12 -top-14 -right-16 rounded-3xl shadow-2xl shadow-black transition-colors duration-200 ease-in-out" />
           </>
         ) : (null)}
       </main>
