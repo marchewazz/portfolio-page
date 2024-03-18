@@ -18,7 +18,7 @@ export default function NavigationButtons(props: {
         border-main-purple
         dark:border-white dark:bg-dark-blue
         rounded-t-3xl sm:rounded-tr-none sm:rounded-l-3xl">
-            <button onClick={() => scrollTo("about")} data-to-scrollspy-id="about" className="navigation-button rounded-tl-3xl">
+            <button onClick={() => scrollTo("about")} data-to-scrollspy-id="about" className="navigation-button rounded-tl-3xl about active-scroll-spy">
                 <FontAwesomeIcon icon={faUser} />
             </button>
             <button onClick={() => scrollTo("experience")} data-to-scrollspy-id="experience" className="navigation-button">
@@ -39,7 +39,7 @@ export default function NavigationButtons(props: {
                     <img className="rounded-full" src="https://flagsapi.com/US/shiny/32.png" />
                 </button>
             )}
-            <button className="navigation-button rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl group" onClick={props.darkModeChangeFunction}>
+            <button className="navigation-button rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl group dark-mode w-10 sm:w-auto" onClick={props.darkModeChangeFunction}>
                 <FontAwesomeIcon className="hidden dark:block" icon={faMoon} />
                 <FontAwesomeIcon className="dark:hidden text-yellow-600 group-hover:text-white transition-all duration-200 ease-in-out" icon={faSun} />
             </button>

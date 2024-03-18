@@ -8,6 +8,38 @@
     color: white;
 }
 
+.dark .navigation-button.about {
+    box-shadow: -.5px 0 0 0px white;
+
+    @media (min-width: 640px) {
+        box-shadow: 0 -1.5px 0 0px white
+    }
+}
+
+.navigation-button.about {
+    box-shadow: -.5px 0 0 0px #3F0165;
+
+    @media (min-width: 640px) {
+        box-shadow: 0 -1.5px 0 0px #3F0165
+    }
+}
+
+.dark .navigation-button.dark-mode {
+    box-shadow: .5px 0 0 0px white;
+
+    @media (min-width: 640px) {
+        box-shadow: 0 1.5px 0 0px white
+    }
+}
+
+.navigation-button.dark-mode {
+    box-shadow: .5px 0 0 0px #3F0165;
+
+    @media (min-width: 640px) {
+        box-shadow: 0 1.5px 0 0px #3F0165
+    }
+}
+
 @layer components {
     .navigation-button {
         @apply p-3 flex items-center justify-center transition-all 
