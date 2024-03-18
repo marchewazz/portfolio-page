@@ -38,9 +38,9 @@ function App() {
     setlanguageState(strings.getLanguage())
     setLanguageReady(true)
  
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/test`)
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/test`)   
   }, [])
-
+  
   useEffect(() => {
     if (languageReady) {
 
