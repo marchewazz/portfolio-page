@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faChevronDown, faFileArrowDown, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faChevronDown, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import strings from "../../utilities/strings";
@@ -47,13 +47,13 @@ export default function About() {
                     </a>
                 </div>
                 <div className="flex flex-col gap-2 justify-between sm:flex-row text-gold">
-                    <a className="resume-link group" href={resume} download="cv">
+                    <a className="resume-link group" href={resume} target="_blank" rel='noopener noreferrer'>
                         { strings.about.englishCV }
-                        <FontAwesomeIcon icon={faFileArrowDown} className="hidden group-hover:block" size="lg" />
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="hidden group-hover:block" size="lg" />
                     </a>
-                    <a className="resume-link group" href={resume} download="cv">
+                    <a className="resume-link group" href={resume} target="_blank" rel='noopener noreferrer'>
                         { strings.about.polishCV }
-                        <FontAwesomeIcon icon={faFileArrowDown} className="hidden group-hover:block" size="lg" />
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="hidden group-hover:block" size="lg" />
                     </a>
                 </div>
             </div>
