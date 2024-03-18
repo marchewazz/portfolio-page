@@ -5,7 +5,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import strings from "../../utilities/strings";
 
-import resume from "../../assets/random.pdf"
+import polishResume from "../../assets/marchewczyk_cv.pdf"
+import englishResume from "../../assets/marchewczyk_cv_english.pdf"
 import FrontSwiper from "./Skills/FrontSwiper";
 import OtherSwiper from "./Skills/OtherSwiper";
 import JSSwiper from "./Skills/JSSwiper";
@@ -47,11 +48,11 @@ export default function About() {
                     </a>
                 </div>
                 <div className="flex flex-col gap-2 justify-between sm:flex-row text-gold">
-                    <a className="resume-link group" href={resume} target="_blank" rel='noopener noreferrer'>
+                    <a className="resume-link group" href={englishResume} target="_blank" rel='noopener noreferrer'>
                         { strings.about.englishCV }
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="hidden group-hover:block" size="lg" />
                     </a>
-                    <a className="resume-link group" href={resume} target="_blank" rel='noopener noreferrer'>
+                    <a className="resume-link group" href={polishResume} target="_blank" rel='noopener noreferrer'>
                         { strings.about.polishCV }
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="hidden group-hover:block" size="lg" />
                     </a>
