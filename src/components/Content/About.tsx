@@ -4,6 +4,7 @@ import { faArrowUpRightFromSquare, faChevronDown, faPhone } from "@fortawesome/f
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import strings from "../../utilities/strings";
+import profilePic from "../../assets/profile.webp";
 
 import polishResume from "../../assets/marchewczyk_cv.pdf"
 import englishResume from "../../assets/marchewczyk_cv_english.pdf"
@@ -27,7 +28,7 @@ export default function About() {
                         Junior Front-end Developer
                     </p>
                 </div>
-                <img className="rounded w-24 sm:w-auto" src="https://picsum.photos/100" alt="" />
+                <img className="rounded w-24 h-28 object-cover object-top" src={profilePic} alt="profile" />
             </div>
             <div className="mx-4 md:mx-8 lg:mx-12">
                 <div className="mt-4 mb-2 flex justify-between text-gold">
