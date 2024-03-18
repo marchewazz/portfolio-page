@@ -9,7 +9,7 @@ export default function FrontSwiper() {
             380: {
                 slidesPerView: 2.5
             },
-            992: {
+            768: {
                 slidesPerView: 3.5
             },
         }}>
