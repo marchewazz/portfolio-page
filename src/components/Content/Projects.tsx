@@ -9,7 +9,7 @@ export default function Projects() {
             </h4>
             <div>
                 { strings.projects.projects.map((project) => {
-                    return <ProjectDisplay project={project} />
+                    return <ProjectDisplay key={project.title} project={project} />
                 })}
             </div>
         </div>

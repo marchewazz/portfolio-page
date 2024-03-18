@@ -9,7 +9,7 @@ export default function Experience() {
             <div className="flex flex-col divide-y-2 divide-main-purple dark:divide-gold divide-dashed transition-all duration-200 ease-in-out">
                 { strings.experience.jobs.map((job) => {
                     return (
-                        <div className="text-lg py-4">
+                        <div key={job.position} className="text-lg py-4">
                             <p className="text-main-purple dark:text-gold transition-all duration-200 ease-in-out">
                                 { job.position }, <span className="font-bold italic">{ job.company }</span>
                             </p>
