@@ -24,7 +24,7 @@ const strings = new LocalizedStrings({
           {
             company: "CODERHINO",
             position: "Junior Front-end Developer",
-            time: "Jun 2023 - Currently",
+            time: "Jun 2023 - currently",
             description: "Now my responsibilities are very similar. In the meantime apart from websites I had created a PDF generating app using Puppeteer library."
           },
           {
