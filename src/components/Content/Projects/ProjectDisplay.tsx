@@ -45,7 +45,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                 <p className="text-dark-text dark:text-light-text transition-all duration-200 ease-in-out">
                     { props.project.technologies.join(", ")}
                 </p>
-                <div className="relative mt-auto flex justify-center">
+                <div className="relative mt-2 sm:mt-auto flex justify-center">
                     <button className="text-light-text dark:bg-gold dark:text-dark-blue p-2 rounded-lg font-semibold border border-transparent w-36
                     transition-all duration-200 ease-in-out
                     bg-main-purple hover:border-main-purple hover:bg-light-background hover:text-main-purple
@@ -55,7 +55,7 @@ export default function ProjectDisplay(props: Readonly<{ project: {
                     </button>
                     {
                         showLinks && 
-                        <div ref={linksRef} className="absolute flex flex-col bg-white bottom-[calc(100%+4px)] border border-black shadow-lg shadow-black z-50 rounded-lg w-max">
+                        <div ref={linksRef} className="absolute flex flex-col bg-white bottom-[calc(100%+4px)] border border-black shadow-lg w-44 shadow-black z-50 rounded-lg">
                             { props.project.links.map((link) => {
                                 return (
                                     <a className="p-2 font-semibold text-center
