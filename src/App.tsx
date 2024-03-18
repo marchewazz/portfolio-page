@@ -5,6 +5,8 @@ import strings from "./utilities/strings"
 
 import { animate, stagger } from "framer-motion"
 
+import axios from "axios";
+
 function App() {
 
   const [darkMode, setDarkMode] = useState<boolean>(localStorage.getItem("darkMode") == "true" || false)
@@ -34,6 +36,8 @@ function App() {
     else localStorage.setItem("language", strings.getLanguage())
     setlanguageState(strings.getLanguage())
     setLanguageReady(true)
+ 
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/test`)
   }, [])
 
   useEffect(() => {
