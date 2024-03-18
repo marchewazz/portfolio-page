@@ -138,7 +138,7 @@ const strings = new LocalizedStrings({
             company: "CODERHINO",
             position: "Praktykant",
             time: "maj 2022 - maj 2022",
-            description: "Podczas miesięcznych praktyk pracowałem przy aplikacji zbierającej i przetwarzającej dane real-time z klienta gry League of Legends"
+            description: "Podczas miesięcznej praktyki pracowałem przy aplikacji zbierającej i przetwarzającej dane real-time z klienta gry League of Legends"
           },
         ]
       },
