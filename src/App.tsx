@@ -3,7 +3,7 @@ import Content from "./components/Content"
 import NavigationButtons from "./components/NavigationButtons"
 import strings from "./utilities/strings"
 
-import { animate, stagger } from "framer-motion"
+import { AnimationSequence, animate, stagger } from "framer-motion"
 
 import axios from "axios";
 
@@ -28,6 +28,7 @@ function App() {
   function changeLanguage(language: string): void {
     localStorage.setItem("language", language)
     strings.setLanguage(language)
+    languageState
     setlanguageState(language);
   }
 
@@ -51,7 +52,7 @@ function App() {
           [navigationButtonsRef.current, { x: [200, 0], opacity: [0, 1]}, { at: "<" }],
         ]
 
-        animate(sequence)
+        animate(sequence as AnimationSequence)
       } else {
         const sequence = [
           [leftRectangleRef.current, { x: [-200, 0], opacity: [0, 1], rotate: [0, 12] }],
@@ -60,7 +61,7 @@ function App() {
           [navigationButtonsRef.current, { y: [100, 0], opacity: [0, 1]}, { delay: stagger(0.5) }],
         ]
 
-        animate(sequence)
+        animate(sequence as AnimationSequence)
       }
     }
   }, [languageReady])

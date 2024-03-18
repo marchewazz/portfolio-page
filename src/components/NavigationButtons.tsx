@@ -1,10 +1,11 @@
 import { faBriefcase, faCode, faGraduationCap, faMoon, faSun, faUser } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import strings from "../utilities/strings";
+import { MouseEventHandler } from "react";
 
 export default function NavigationButtons(props: { 
     changeLanguageFunction: Function,
-    darkModeChangeFunction: React.ChangeEventHandler<HTMLInputElement>, 
+    darkModeChangeFunction: MouseEventHandler<HTMLButtonElement>, 
     innerRef: React.MutableRefObject<null> }) {
 
     function scrollTo(id: string) {
