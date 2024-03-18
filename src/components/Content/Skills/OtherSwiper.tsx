@@ -2,11 +2,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function OtherSwiper() {
     return (
-        <Swiper
+        <Swiper className="my-4"
         spaceBetween={50}
         slidesPerView={1.5}
         breakpoints={{
-            480: {
+            380: {
                 slidesPerView: 2.5
             },
             992: {
