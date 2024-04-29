@@ -49,7 +49,7 @@ function App() {
           [leftRectangleRef.current, { x: [-200, 0], opacity: [0, 1], rotate: [0, 12] }],
           [rightRectangleRef.current, { x: [200, 0], opacity: [0, 1], rotate: [0, -12] }, { delay: stagger(0.5) }],
           [contentRef.current, { y: [-200, 50, 0], opacity: [0, 1] }, { delay: stagger(0.5) }],
-          [navigationButtonsRef.current, { x: [200, 0], opacity: [0, 1]}, { at: "<" }],
+          [navigationButtonsRef.current, { x: [100, 0], opacity: [0, 1]}, { at: "<" }],
         ]
 
         animate(sequence as AnimationSequence)

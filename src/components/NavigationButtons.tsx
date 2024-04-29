@@ -13,7 +13,7 @@ export default function NavigationButtons(props: {
     }
 
     return (
-        <div ref={props.innerRef} className="absolute text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:left-auto sm:right-0 sm:top-1/2 sm:bottom-auto z-50 
+        <div ref={props.innerRef} className="absolute bg-white text-white flex sm:flex-col w-fit bottom-0 left-0 right-0 mx-auto sm:top-[calc(50%-129px)] sm:left-auto sm:right-0 sm:bottom-auto z-50 
         border-r border-l border-t sm:border-b sm:border-r-0
         border-main-purple
         dark:border-white dark:bg-dark-blue
